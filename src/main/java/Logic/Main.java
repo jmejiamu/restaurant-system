@@ -18,8 +18,8 @@ public class Main {
 
         Manager manager =  new Manager(5, "Mariza", "Ortex", "J", "724-55-6667", "5106895544", "F45747", 30);
 
-        // Tes
-        RegularEmployee regDuplicate =  new RegularEmployee("cook", "JJ", "kk", "k", "77-777-777", "5106897755", "F123", 34);
+        // Test
+        RegularEmployee regDuplicate =  new RegularEmployee("Cook", "Joe", "Snowden", "k", "77-777-777", "5106897755", "F1237", 27);
         
         // Testing Duplicates
         System.out.println(reg == regDuplicate);
@@ -34,8 +34,12 @@ public class Main {
         for (Person employee : employees) {
             
             if(employee instanceof AreaSupervisor){
+                
+                System.out.println("---------------------");
+                
                 AreaSupervisor  as =  (AreaSupervisor)employee;
                 
+                //Print info
                 System.out.println(as);
                 
                 // Method in sub class
@@ -45,22 +49,31 @@ public class Main {
             }
             
             if(employee instanceof Manager){
+                
                 System.out.println("---------------------");
+                
                 Manager m =  (Manager)employee;
+                
                 //Printing info
                 System.out.println(m);
-                // Methos in the sub class
+                
+                // Methods in the sub class
                 m.clockIn();
                 m.doInventory();
                 m.doSchedule();
+                m.clockOut();
             }
             
             if(employee instanceof RegularEmployee){
+                
                 System.out.println("---------------------");
+                
                 RegularEmployee rgEmp = (RegularEmployee)employee;
                 
+                //Print info
                 System.out.println(rgEmp);
                 
+                //Method in sub Class
                 rgEmp.callOrder();
                 
             }
