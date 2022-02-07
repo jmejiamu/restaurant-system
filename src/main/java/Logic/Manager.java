@@ -62,5 +62,22 @@ public class Manager extends Person implements Password, TimerChecker{
                 "* Store Number manage: " + storeNum;
     }
 
+    @Override
+    public boolean equals(Object obj){
+        if (obj instanceof Manager) {
+            Manager manager =  (Manager) obj;
+            
+            String otherRegEmpId =  manager.getId();
+            String otherRegEmpFName = manager.getFirstName();
+            
+            if(getId().equals(otherRegEmpId) && getFirstName().equals(otherRegEmpFName)){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    }
     
 }

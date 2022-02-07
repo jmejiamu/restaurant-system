@@ -16,10 +16,12 @@ public class Main {
 
         // Test
         RegularEmployee regDuplicate =  new RegularEmployee("Cook", "Joe", "Snowden", "k", "77-777-777", "5106897755", "F1237", 27);
+        Manager managerD =  new Manager(5, "Mariza", "Ortex", "J", "724-55-6667", "5106895544", "F45747", 30);
         
         // Testing Duplicates
         System.out.println(reg == regDuplicate);
         System.out.println(reg.equals(regDuplicate));
+        System.out.println(manager.equals(managerD));
         
         Person[] employees = new Person[3];
         
