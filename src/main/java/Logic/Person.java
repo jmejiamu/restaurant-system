@@ -96,5 +96,21 @@ public class Person {
                 "* Age: " + age;
     }
     
-    
+    @Override
+    public boolean equals(Object obj){
+        if (obj instanceof Person) {
+            Person personobj =  (Person) obj;
+            
+            String otherRegEmpId =  personobj.getId();
+            String otherRegEmpFName = personobj.getFirstName();
+            
+            if(getId().equals(otherRegEmpId) && getFirstName().equals(otherRegEmpFName)){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    } 
 }
