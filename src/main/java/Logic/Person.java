@@ -86,8 +86,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person: \n" + 
-                "* First Name: " + firstName + "\n" +
+        return  "* First Name: " + firstName + "\n" +
                 "* Last Name: " + lastName + "\n" +
                 "* Middle Name: " + middleName + "\n" +
                 "* ssn: " + ssn + "\n" +

@@ -40,7 +40,7 @@ public class Main {
                 AreaSupervisor  as =  (AreaSupervisor)employee;
                 
                 //Print info
-                System.out.println(as);
+                System.out.println(as.getSuperString());
                 
                 // Method in sub class
                 as.clockIn();
@@ -71,7 +71,7 @@ public class Main {
                 RegularEmployee rgEmp = (RegularEmployee)employee;
                 
                 //Print info
-                System.out.println(rgEmp);
+                System.out.println(rgEmp.getSuperString());
                 
                 //Method in sub Class
                 rgEmp.callOrder();

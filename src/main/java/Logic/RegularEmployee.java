@@ -54,17 +54,23 @@ public class RegularEmployee extends Person implements TimerChecker, Password{
         System.out.println("Call order");
     }
 
-    @Override
-    public String toString() {
-        return "RegularEmployee:\n"+ 
-                "* First Name: " + getFirstName()+ "\n"+
-                "* Last Name: "+ getLastName() + "\n" +
-                "* Middle Name: " + getMiddleName() + "\n"+
-                "* SSN: " + getSsn()+ "\n"+
-                "* Phone #: " + getPhoneNum() + "\n"+
-                "* ID: " + getId() + "\n"+
-                "* Age: " + getAge() + "\n" +
-                "* position: " + position  ;
+//    @Override
+//    public String toString() {
+//        return "RegularEmployee:\n"+ 
+//                "* First Name: " + getFirstName()+ "\n"+
+//                "* Last Name: "+ getLastName() + "\n" +
+//                "* Middle Name: " + getMiddleName() + "\n"+
+//                "* SSN: " + getSsn()+ "\n"+
+//                "* Phone #: " + getPhoneNum() + "\n"+
+//                "* ID: " + getId() + "\n"+
+//                "* Age: " + getAge() + "\n" +
+//                "* position: " + position  ;
+//    }
+    
+    public String getSuperString(){
+        return "Regular Employee:\n" + 
+                super.toString() + "\n"+
+                "* Position: " + position;
     }
     
     @Override
