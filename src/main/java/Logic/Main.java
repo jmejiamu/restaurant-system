@@ -21,9 +21,9 @@ public class Main {
         
         // Testing Duplicates
         System.out.println(reg == regDuplicate);
-        System.out.println(reg.equals(regDuplicate));
-        System.out.println(manager.equals(managerD));
-        System.out.println(areasup.equals(areasupD));
+        System.out.println(reg.getEquals(regDuplicate));
+        System.out.println(manager.getEquals(managerD));
+        System.out.println(areasup.getEquals(areasupD));
         
         Person[] employees = new Person[3];
         

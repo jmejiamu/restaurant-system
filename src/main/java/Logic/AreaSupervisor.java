@@ -57,22 +57,8 @@ public class AreaSupervisor extends Person implements Password, TimerChecker {
                 "* Managed Stored: " +  numOfStores;
     }
     
-    @Override
-    public boolean equals(Object obj){
-        if (obj instanceof AreaSupervisor) {
-            AreaSupervisor as =  (AreaSupervisor) obj;
-            
-            String otherRegEmpId =  as.getId();
-            String otherRegEmpFName = as.getFirstName();
-            
-            if(getId().equals(otherRegEmpId) && getFirstName().equals(otherRegEmpFName)){
-                return true;
-            }else{
-                return false;
-            }
-        }else{
-            return false;
-        }
+    public boolean getEquals(Object obj){      
+        return super.equals(obj);
     }
     
 }

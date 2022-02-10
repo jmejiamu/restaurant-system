@@ -61,23 +61,7 @@ public class RegularEmployee extends Person implements TimerChecker, Password{
                 "* Position: " + position;
     }
     
-    @Override
-    public boolean equals(Object obj){
-        if (obj instanceof RegularEmployee) {
-            RegularEmployee reguEmp =  (RegularEmployee) obj;
-            
-            String otherRegEmpId =  reguEmp.getId();
-            String otherRegEmpFName = reguEmp.getFirstName();
-            
-            if(getId().equals(otherRegEmpId) && getFirstName().equals(otherRegEmpFName)){
-                return true;
-            }else{
-                return false;
-            }
-        }else{
-            return false;
-        }
+    public boolean getEquals(Object obj){
+        return super.equals(obj);
     }
-    
-    
 }
