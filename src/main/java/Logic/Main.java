@@ -55,7 +55,7 @@ public class Main {
                 Manager m =  (Manager)employee;
                 
                 //Printing info
-                System.out.println(m);
+                System.out.println(m.getSuperString());
                 
                 // Methods in the sub class
                 m.clockIn();

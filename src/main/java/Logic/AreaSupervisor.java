@@ -51,19 +51,6 @@ public class AreaSupervisor extends Person implements Password, TimerChecker {
         this.numOfStores = numOfStores;
     }
 
-//    @Override
-//    public String toString() {
-//        return "AreaSupervisor:\n" + 
-//                "* First Name: " + getFirstName()+ "\n"+
-//                "* Last Name: "+ getLastName() + "\n" +
-//                "* Middle Name: " + getMiddleName() + "\n"+
-//                "* SSN: " + getSsn()+ "\n"+
-//                "* Phone #: " + getPhoneNum() + "\n"+
-//                "* ID: " + getId() + "\n"+
-//                "* Age: " + getAge() + "\n" +
-//                "* Managed Stores: " + numOfStores ;
-//    }
-    
     public String getSuperString(){
         return "Area Supervisor Employee:\n" + 
                 super.toString() + "\n"+

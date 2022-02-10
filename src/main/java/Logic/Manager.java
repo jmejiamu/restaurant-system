@@ -49,17 +49,12 @@ public class Manager extends Person implements Password, TimerChecker{
         System.out.println("Inverntory at the end of the month");
     }
 
-    @Override
-    public String toString() {
-        return "Manager:\n"+ 
-                "* First Name: " + getFirstName()+ "\n"+
-                "* Last Name: "+ getLastName() + "\n" +
-                "* Middle Name: " + getMiddleName() + "\n"+
-                "* SSN: " + getSsn()+ "\n"+
-                "* Phone #: " + getPhoneNum() + "\n"+
-                "* ID: " + getId() + "\n"+
-                "* Age: " + getAge() + "\n" +
-                "* Store Number manage: " + storeNum;
+    
+    
+    public String getSuperString(){
+        return "Manager Employee:\n" + 
+                super.toString() + "\n"+
+                "* Store Number Mange: " +  storeNum;
     }
 
     @Override
